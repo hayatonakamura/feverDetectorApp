@@ -1,0 +1,426 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4A134DEA24630E6A00678BBD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A134DE924630E6A00678BBD /* AppDelegate.swift */; };
+		4A134DEC24630E6A00678BBD /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A134DEB24630E6A00678BBD /* SceneDelegate.swift */; };
+		4A134DEE24630E6A00678BBD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A134DED24630E6A00678BBD /* ViewController.swift */; };
+		4A134DF124630E6A00678BBD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4A134DEF24630E6A00678BBD /* Main.storyboard */; };
+		4A134DF324630E7100678BBD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4A134DF224630E7100678BBD /* Assets.xcassets */; };
+		4A134DF624630E7100678BBD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4A134DF424630E7100678BBD /* LaunchScreen.storyboard */; };
+		4A134DFE246312DE00678BBD /* RecentsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A134DFD246312DE00678BBD /* RecentsViewController.swift */; };
+		4A134E00246312E600678BBD /* UsersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A134DFF246312E600678BBD /* UsersViewController.swift */; };
+		6BA947848BED9F3D02B3632A /* Pods_feverDetector.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AA5F09AB148E59AA6039D74E /* Pods_feverDetector.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		4A134DE624630E6A00678BBD /* feverDetector.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = feverDetector.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4A134DE924630E6A00678BBD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		4A134DEB24630E6A00678BBD /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		4A134DED24630E6A00678BBD /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		4A134DF024630E6A00678BBD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		4A134DF224630E7100678BBD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		4A134DF524630E7100678BBD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		4A134DF724630E7100678BBD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4A134DFD246312DE00678BBD /* RecentsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecentsViewController.swift; sourceTree = "<group>"; };
+		4A134DFF246312E600678BBD /* UsersViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersViewController.swift; sourceTree = "<group>"; };
+		AA5F09AB148E59AA6039D74E /* Pods_feverDetector.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_feverDetector.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B70B6AC9F6BF13BC7EB7DCDD /* Pods-feverDetector.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-feverDetector.debug.xcconfig"; path = "Target Support Files/Pods-feverDetector/Pods-feverDetector.debug.xcconfig"; sourceTree = "<group>"; };
+		FD684701732FF85E937E1B73 /* Pods-feverDetector.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-feverDetector.release.xcconfig"; path = "Target Support Files/Pods-feverDetector/Pods-feverDetector.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4A134DE324630E6A00678BBD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6BA947848BED9F3D02B3632A /* Pods_feverDetector.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4A134DDD24630E6A00678BBD = {
+			isa = PBXGroup;
+			children = (
+				4A134DE824630E6A00678BBD /* feverDetector */,
+				4A134DE724630E6A00678BBD /* Products */,
+				C16CD73856C2270EAAB60276 /* Pods */,
+				DFCD41166D8DF749310F90AA /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		4A134DE724630E6A00678BBD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4A134DE624630E6A00678BBD /* feverDetector.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4A134DE824630E6A00678BBD /* feverDetector */ = {
+			isa = PBXGroup;
+			children = (
+				4A134DE924630E6A00678BBD /* AppDelegate.swift */,
+				4A134DEB24630E6A00678BBD /* SceneDelegate.swift */,
+				4A134DED24630E6A00678BBD /* ViewController.swift */,
+				4A134DEF24630E6A00678BBD /* Main.storyboard */,
+				4A134DFD246312DE00678BBD /* RecentsViewController.swift */,
+				4A134DFF246312E600678BBD /* UsersViewController.swift */,
+				4A134DF224630E7100678BBD /* Assets.xcassets */,
+				4A134DF424630E7100678BBD /* LaunchScreen.storyboard */,
+				4A134DF724630E7100678BBD /* Info.plist */,
+			);
+			path = feverDetector;
+			sourceTree = "<group>";
+		};
+		C16CD73856C2270EAAB60276 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B70B6AC9F6BF13BC7EB7DCDD /* Pods-feverDetector.debug.xcconfig */,
+				FD684701732FF85E937E1B73 /* Pods-feverDetector.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		DFCD41166D8DF749310F90AA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AA5F09AB148E59AA6039D74E /* Pods_feverDetector.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		4A134DE524630E6A00678BBD /* feverDetector */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4A134DFA24630E7100678BBD /* Build configuration list for PBXNativeTarget "feverDetector" */;
+			buildPhases = (
+				10EA10A92A9A5A2A2EBE0BDD /* [CP] Check Pods Manifest.lock */,
+				4A134DE224630E6A00678BBD /* Sources */,
+				4A134DE324630E6A00678BBD /* Frameworks */,
+				4A134DE424630E6A00678BBD /* Resources */,
+				78D997D82D2E7F69F0377109 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = feverDetector;
+			productName = feverDetector;
+			productReference = 4A134DE624630E6A00678BBD /* feverDetector.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4A134DDE24630E6A00678BBD /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1130;
+				LastUpgradeCheck = 1130;
+				ORGANIZATIONNAME = Hayatopia;
+				TargetAttributes = {
+					4A134DE524630E6A00678BBD = {
+						CreatedOnToolsVersion = 11.3.1;
+					};
+				};
+			};
+			buildConfigurationList = 4A134DE124630E6A00678BBD /* Build configuration list for PBXProject "feverDetector" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 4A134DDD24630E6A00678BBD;
+			productRefGroup = 4A134DE724630E6A00678BBD /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4A134DE524630E6A00678BBD /* feverDetector */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4A134DE424630E6A00678BBD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4A134DF624630E7100678BBD /* LaunchScreen.storyboard in Resources */,
+				4A134DF324630E7100678BBD /* Assets.xcassets in Resources */,
+				4A134DF124630E6A00678BBD /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		10EA10A92A9A5A2A2EBE0BDD /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-feverDetector-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		78D997D82D2E7F69F0377109 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-feverDetector/Pods-feverDetector-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Charts/Charts.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Charts.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-feverDetector/Pods-feverDetector-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4A134DE224630E6A00678BBD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4A134DEE24630E6A00678BBD /* ViewController.swift in Sources */,
+				4A134DFE246312DE00678BBD /* RecentsViewController.swift in Sources */,
+				4A134E00246312E600678BBD /* UsersViewController.swift in Sources */,
+				4A134DEA24630E6A00678BBD /* AppDelegate.swift in Sources */,
+				4A134DEC24630E6A00678BBD /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		4A134DEF24630E6A00678BBD /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4A134DF024630E6A00678BBD /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		4A134DF424630E7100678BBD /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4A134DF524630E7100678BBD /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		4A134DF824630E7100678BBD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		4A134DF924630E7100678BBD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		4A134DFB24630E7100678BBD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B70B6AC9F6BF13BC7EB7DCDD /* Pods-feverDetector.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9P4SKX633D;
+				INFOPLIST_FILE = feverDetector/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.hayatopia.feverDetector;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		4A134DFC24630E7100678BBD /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FD684701732FF85E937E1B73 /* Pods-feverDetector.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9P4SKX633D;
+				INFOPLIST_FILE = feverDetector/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.hayatopia.feverDetector;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4A134DE124630E6A00678BBD /* Build configuration list for PBXProject "feverDetector" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4A134DF824630E7100678BBD /* Debug */,
+				4A134DF924630E7100678BBD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4A134DFA24630E7100678BBD /* Build configuration list for PBXNativeTarget "feverDetector" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4A134DFB24630E7100678BBD /* Debug */,
+				4A134DFC24630E7100678BBD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 4A134DDE24630E6A00678BBD /* Project object */;
+}
