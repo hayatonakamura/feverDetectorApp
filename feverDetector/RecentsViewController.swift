@@ -159,7 +159,8 @@ class RecentsViewController: UIViewController {
             self.dateLabel.text = "Date: " + String(newstring)
             self.bodyTempLabel.text = "Body Temp: "+self.bodyTemp[num] + "°C"
             self.outsideBodyTempLabel.text = "Weather: " + self.weather[num] + "°C"
-            
+            let now = abs((self.counter)%10)
+            self.pictureNumber.text = String(now+1) + "/10"
            
         }
         //update_fever_bar()

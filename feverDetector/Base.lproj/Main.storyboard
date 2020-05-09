@@ -114,7 +114,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="GM9-6d-drT"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Recent" id="wpS-YK-H0n"/>
+                    <tabBarItem key="tabBarItem" title="Recent" image="camera" catalog="system" id="wpS-YK-H0n"/>
                     <connections>
                         <outlet property="bodyTempLabel" destination="979-0N-lSX" id="Z7V-qS-6QX"/>
                         <outlet property="dateLabel" destination="RLX-K3-VU3" id="749-7d-tBp"/>
@@ -201,7 +201,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="9Xo-DH-odv"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Home" id="RXu-9j-3Az"/>
+                    <tabBarItem key="tabBarItem" title="Home" image="bed.double" catalog="system" id="RXu-9j-3Az"/>
                     <connections>
                         <outlet property="bar_chart" destination="MKJ-xd-tRm" id="ffk-6M-xbl"/>
                         <outlet property="totalHitsLabel" destination="UYR-ed-HWD" id="TvL-oV-7wg"/>
@@ -231,7 +231,7 @@
             </objects>
             <point key="canvasLocation" x="-752" y="364"/>
         </scene>
-        <!--Users-->
+        <!--COVID-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="UsersViewController" customModule="feverDetector" customModuleProvider="target" sceneMemberID="viewController">
@@ -239,30 +239,89 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Users" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sVk-h7-8kW">
-                                <rect key="frame" x="20" y="44" width="240" height="72"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="COVID-19" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sVk-h7-8kW">
+                                <rect key="frame" x="20" y="44" width="301" height="72"/>
                                 <fontDescription key="fontDescription" type="system" weight="thin" pointSize="60"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Update zipcode: " textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qni-RU-dX4">
+                                <rect key="frame" x="9" y="281" width="229" height="78"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Current zipcode: " lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Nk8-Qs-h34">
+                                <rect key="frame" x="9" y="367" width="356" height="36"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Zipcode" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="vlF-co-4Dx">
+                                <rect key="frame" x="245" y="304" width="120" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="phonePad" enablesReturnKeyAutomatically="YES" textContentType="postal-code"/>
+                                <connections>
+                                    <action selector="zipcodeChanged:" destination="BYZ-38-t0r" eventType="editingDidEnd" id="PDP-29-HAW"/>
+                                </connections>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="# Tested Postive:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GFJ-W8-Kvm">
+                                <rect key="frame" x="12" y="432" width="347" height="36"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Total Tested: " lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PKc-cg-X2E">
+                                <rect key="frame" x="12" y="499" width="260" height="36"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Percentage:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qFL-6c-U7X">
+                                <rect key="frame" x="12" y="570" width="353" height="36"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="covid19" translatesAutoresizingMaskIntoConstraints="NO" id="dik-QZ-0lG">
+                                <rect key="frame" x="46" y="124" width="285" height="149"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" red="0.63054874139999995" green="0.61695649409999997" blue="0.76011262690000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
                             <constraint firstItem="sVk-h7-8kW" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="TSl-Ab-vZd"/>
                             <constraint firstItem="sVk-h7-8kW" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="kec-bn-EyQ"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="sVk-h7-8kW" secondAttribute="trailing" constant="115" id="nB5-HX-7dG"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="sVk-h7-8kW" secondAttribute="trailing" constant="54" id="nB5-HX-7dG"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Users" id="qKl-ER-Y3I"/>
+                    <tabBarItem key="tabBarItem" title="COVID" image="person" catalog="system" id="qKl-ER-Y3I"/>
+                    <connections>
+                        <outlet property="currentZipLabel" destination="Nk8-Qs-h34" id="Vue-x6-RLJ"/>
+                        <outlet property="percentageLabel" destination="qFL-6c-U7X" id="jAV-ZE-yVd"/>
+                        <outlet property="testedPosLabel" destination="GFJ-W8-Kvm" id="lhR-C1-9xP"/>
+                        <outlet property="totalLabel" destination="PKc-cg-X2E" id="2fD-UL-anB"/>
+                        <outlet property="zipcodeObject" destination="vlF-co-4Dx" id="MVT-GM-Q9w"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="203" y="1017"/>
+            <point key="canvasLocation" x="202.40000000000001" y="1016.7487684729065"/>
         </scene>
     </scenes>
     <resources>
+        <image name="bed.double" catalog="system" width="64" height="40"/>
+        <image name="camera" catalog="system" width="64" height="48"/>
+        <image name="covid19" width="1200" height="1205"/>
         <image name="left_arrow" width="512" height="512"/>
+        <image name="person" catalog="system" width="64" height="58"/>
         <image name="refresh_b" width="512" height="512"/>
         <image name="right_arrow" width="512" height="512"/>
     </resources>
