@@ -148,7 +148,7 @@ class RecentsViewController: UIViewController {
     
     func updateLabel(num: Int){
         DispatchQueue.main.async {
-            
+             self.update_fever_bar()
             let test = self.pictureName[num]
             let startInd = test.startIndex
             let begin = test.index(startInd, offsetBy:5)
@@ -157,12 +157,12 @@ class RecentsViewController: UIViewController {
             
             self.nameLabel.text = "Name: " + self.name[num]
             self.dateLabel.text = "Date: " + String(newstring)
-            //self.bodyTempLabel.text = "Body Temp: "+self.bodyTemp[num] + "°C"
-            //self.outsideBodyTempLabel.text = "Weather: " + self.weather[num] + "°C"
+            self.bodyTempLabel.text = "Body Temp: "+self.bodyTemp[num] + "°C"
+            self.outsideBodyTempLabel.text = "Weather: " + self.weather[num] + "°C"
             
-            //self.update_fever_bar()
+           
         }
-        update_fever_bar()
+        //update_fever_bar()
     }
     
     
@@ -199,11 +199,10 @@ class RecentsViewController: UIViewController {
     @IBAction func rightButton(_ sender: Any) {
         self.counter += 1
         let now = abs((self.counter)%10)
+        //update_fever_bar()
         setImage(from: self.pictureName[now])
         pictureNumber.text = String(now+1) + "/10"
-        
         self.setImage(from: self.pictureName[now])
-        update_fever_bar()
         updateLabel(num: now)
         
     }
@@ -211,11 +210,10 @@ class RecentsViewController: UIViewController {
     @IBAction func leftButton(_ sender: Any) {
         self.counter -= 1
         let now = abs((self.counter)%10)
+        //update_fever_bar()
         setImage(from: self.pictureName[now])
         pictureNumber.text = String(now+1) + "/10"
-        
         self.setImage(from: self.pictureName[now])
-        update_fever_bar()
         updateLabel(num: now)
     }
     
@@ -310,8 +308,8 @@ class RecentsViewController: UIViewController {
     
     func update_fever_bar() {
         
-        let maxTemp = 42.0
-        let index = (self.counter)%10
+        let maxTemp = 41.0
+        let index = abs((self.counter)%10)
         let currTemp = bodyTemp[index]
         self.feverChart.drawBarShadowEnabled = true
         self.feverChart.drawValueAboveBarEnabled = true
@@ -328,39 +326,34 @@ class RecentsViewController: UIViewController {
         let leftAxis = self.feverChart.leftAxis;
         leftAxis.drawAxisLineEnabled = false;
         leftAxis.drawGridLinesEnabled = true;
-        leftAxis.axisMinimum = 30.0; // this replaces startAtZero = YES
+        leftAxis.axisMinimum = 35.0; // this replaces startAtZero = YES
         leftAxis.enabled = false
         
         let rightAxis = self.feverChart.rightAxis
         rightAxis.enabled = true;
         rightAxis.drawAxisLineEnabled = false;
         rightAxis.drawGridLinesEnabled = true;
-        rightAxis.axisMinimum = 30.0; // this replaces startAtZero = YES
+        rightAxis.axisMinimum = 35.0; // this replaces startAtZero = YES
         
         let l = self.feverChart.legend
         l.enabled =  false
         feverChart.fitBars = true;
-        self.feverChart.animate(xAxisDuration: 2, yAxisDuration: 2)
+        self.feverChart.animate(xAxisDuration: 2.5, yAxisDuration: 2.5)
         
         let barWidth = 0.6
         var yVals = [BarChartDataEntry]()
         yVals.append(BarChartDataEntry(x: Double(1.0), y: Double(currTemp)!))
-        var feverVal = [BarChartDataEntry]()
         yVals.append(BarChartDataEntry(x: Double(1.0), y: Double(38.0)))
         
         var set1 : BarChartDataSet!
         set1 = BarChartDataSet(entries: yVals, label: "DataSet")
         set1.colors = [#colorLiteral(red: 1, green: 0, blue: 0.3303074837, alpha: 1), #colorLiteral(red: 0.1764705926, green: 0.4980392158, blue: 0.7568627596, alpha: 1)]
-        //var set2: BarChartDataSet!
-        //set2 = BarChartDataSet(entries: feverVal, label: "Fever Val")
-        //set2.colors = [#colorLiteral(red: 0.1764705926, green: 0.4980392158, blue: 0.7568627596, alpha: 1)]
         var dataSets = [BarChartDataSet]()
         dataSets.append(set1)
-        //dataSets.append(set2)
         let data = BarChartData(dataSets: dataSets)
         data.barWidth =  barWidth;
         feverChart.data = data
-        //feverChart.backgroundColor = #colorLiteral(red: 1, green: 0, blue: 0.3303074837, alpha: 1)
+        feverChart.drawValueAboveBarEnabled = true
     }
     
     
